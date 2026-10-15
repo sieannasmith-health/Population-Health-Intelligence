@@ -53,11 +53,12 @@
 - [x] Review local Git candidate file list for protected paths
 - [x] Inspect rendered figure and local staged Git release file list
 - [x] Create first local Git commit for reviewed research files
-- [ ] Publish verified GitHub repository (not yet published)
+- [x] Create private GitHub repository and push version-controlled research
+- [ ] Approve and release public GitHub portfolio repository
 - [ ] Add verified portfolio project to resume, LinkedIn and Recall knowledge base
 
 ## Current decision
-**Next task:** Obtain final scientific/editorial publication sign-off and explicitly accept remaining exploratory limitations; then connect a GitHub remote and publish. Local Git commit is complete. Internal review is documented in reports/20_publication_review.md. Results are exploratory until the validation and reporting gates are complete.
+**Next task:** Complete final scientific/editorial review and decide whether to publish the exploratory portfolio publicly. Private GitHub repository is created and synchronized. Internal review is documented in reports/20_publication_review.md. Results are exploratory until the validation and reporting gates are complete.
 
 ## Tracking rules
 - [x] = Output exists and was executed or checked.
