@@ -72,7 +72,10 @@ Overall survey-weighted HbA1c >=6.5% prevalence was **10.23%** among 5,018 adult
 
 In a supplementary income-missingness analysis retaining adults with observed HbA1c and complete other model variables regardless of income reporting (n=5,007), 4,362 reported an income-to-poverty ratio and 645 did not. Survey-weighted HbA1c >=6.5% prevalence was **10.16% (95% CI 8.97%-11.36%)** when income was observed and **10.70% (95% CI 7.64%-13.77%)** when it was missing. A model adjusted for age, sex, education and race/ethnicity gave an odds ratio of **0.93 (95% CI 0.64-1.36)** for missing versus observed income. This assesses observed-outcome differences by missingness status, not whether missing income values are ignorable or whether the income association is unbiased.
 
-### 5.4 Robustness and replication
+### 5.4 Income nonresponse assumption stress test
+An exploratory scenario stress test reassigned all 645 adults otherwise eligible for the adjusted models but missing income-to-poverty ratio to the lowest or highest income category, then refitted both model specifications (n=5,007). For the income PIR >4 versus <=1 comparison, the age/sex-adjusted standardized difference ranged from -2.03 to -2.71 percentage points under the two assignments; the race/ethnicity-extended difference ranged from -0.85 to -1.70 points. The corresponding original complete-case differences were -2.70 and -1.42 points. This illustrates assumption sensitivity rather than identifying or resolving nonignorable income nonresponse. See `25_income_scenario_stress_test.md`.
+
+### 5.5 Robustness and replication
 A quadratic-age sensitivity model produced broadly similar selected income and education coefficients to the linear-age extended model. Nine complete-case income and education subgroups passed the project's descriptive reliability screen, but model-based subgroup precision still requires separate judgment. Rebuilding the survey design from all-age source files reproduced the descriptive estimates, all 15 extended-model coefficients and standard errors, and all nine extended-model marginal prevalence estimates and standard errors exactly.
 
 ![Two-model adjusted prevalence comparison](16_model_comparison.png)
@@ -107,6 +110,7 @@ Rscript scripts/14_model_replication.R
 Rscript scripts/15_reliability_and_model_decision.R
 Rscript scripts/16_model_comparison_figures.R
 Rscript scripts/19_income_missingness_sensitivity.R
+Rscript scripts/20_income_scenario_stress_test.R
 python3 scripts/18_report_consistency_audit.py
 ```
 

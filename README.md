@@ -19,7 +19,7 @@ How are income and education associated with diabetes-range HbA1c prevalence amo
 ## Selected findings (exploratory)
 - Weighted HbA1c >=6.5% prevalence varied from 20.28% among adults with less than ninth-grade education to 8.72% among college graduates and above, before adjustment.
 - The selected college+ versus less-than-ninth-grade standardized contrast was -8.02 percentage points (95% CI -14.46 to -1.58) after age/sex adjustment and -5.54 points (95% CI -11.96 to 0.88) when additionally adjusted for race/ethnicity.
-- Sensitivity to the adjustment strategy and socioeconomic missing data limits interpretation.
+- Exploratory extreme-category assignments for missing income produced a highest-versus-lowest income contrast of -2.03 to -2.71 percentage points with age/sex adjustment and -0.85 to -1.70 points with extended demographic adjustment. These are assumption stress tests, not definitive bias correction.
 
 ![Model comparison with design-based uncertainty](reports/16_model_comparison.png)
 

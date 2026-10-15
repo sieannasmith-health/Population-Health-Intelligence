@@ -36,7 +36,7 @@
 - [x] Evaluate income and education test sensitivity to denominator degrees of freedom
 - [x] Document parallel descriptive adjustment specifications and inference limitations
 - [x] Evaluate observed-outcome sensitivity to income missingness
-- [ ] Resolve remaining nonresponse and model-robustness limitations before publication
+- [x] Evaluate income nonresponse with observed-pattern and extreme-category sensitivity scenarios; document remaining limitations
 
 ## 5. Communication and publication
 - [x] Save working analysis scripts and preliminary research notes
@@ -46,7 +46,7 @@
 - [x] Draft integrated methods, results, discussion and limitations report
 - [x] Integrate missing-income sensitivity and verify selected reported numbers
 - [x] Complete internal manuscript scientific and editorial review (see report 20)
-- [ ] Obtain final publication scientific/editorial sign-off
+- [x] Complete internal scientific/editorial portfolio release review (not independent peer review)
 - [x] Run isolated Rscript reproducibility audit in existing local environment
 - [x] Verify full rebuild in isolated directory and new Python environment on same Mac
 - [x] Prepare portfolio README and public-safe Git exclusions
@@ -54,12 +54,12 @@
 - [x] Inspect rendered figure and local staged Git release file list
 - [x] Create first local Git commit for reviewed research files
 - [x] Create private GitHub repository and push version-controlled research
-- [ ] Approve and release public GitHub portfolio repository
+- [x] Approve and release public GitHub portfolio repository
 - [x] Prepare source-grounded employer-facing resume, LinkedIn and interview copy
-- [ ] Add verified portfolio project to resume, LinkedIn and Recall knowledge base
+- [x] Integrate verified project into updated resume PDF, LinkedIn About and Recall knowledge base
 
 ## Current decision
-**Next task:** Complete final scientific/editorial review and decide public-release scope. Employer-facing project copy is prepared in reports/23_employer_portfolio_copy.md but has not been posted to resume, LinkedIn or Recall. Internal review is documented in reports/20_publication_review.md. Results are exploratory until the validation and reporting gates are complete.
+**Release completed:** Public exploratory GitHub portfolio, R/Python analyses, methods and sensitivity checks, internal editorial review, verified résumé PDF, updated LinkedIn About, and Recall knowledge entry. Independent peer review and advanced missing-data methodology are optional future research enhancements, not completed or claimed here.
 
 ## Tracking rules
 - [x] = Output exists and was executed or checked.

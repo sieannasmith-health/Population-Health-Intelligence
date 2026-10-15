@@ -2,7 +2,7 @@
 # Run from project root; fail if any required build/validation fails.
 set -eu
 .venv/bin/python scripts/13_build_full_survey.py
-for script in 10_complete_case_sensitivity 13_adult_domain_validation 14_model_replication 15_reliability_and_model_decision 16_model_comparison_figures 19_income_missingness_sensitivity; do
+for script in 10_complete_case_sensitivity 13_adult_domain_validation 14_model_replication 15_reliability_and_model_decision 16_model_comparison_figures 19_income_missingness_sensitivity 20_income_scenario_stress_test; do
   Rscript "scripts/$script.R" > "reports/17_${script}_run.log" 2>&1
   printf 'PASS %s\n' "$script"
 done

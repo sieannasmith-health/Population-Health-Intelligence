@@ -1,0 +1,7 @@
+"scenario","model","n","high_minus_low_pp"
+"Observed income only","Age + sex",4362,-2.70004756844251
+"Observed income only","Extended (+race/ethnicity)",4362,-1.41860677252861
+"All missing PIR assigned <=1","Age + sex",5007,-2.03179643194248
+"All missing PIR assigned <=1","Extended (+race/ethnicity)",5007,-0.85459489362725
+"All missing PIR assigned >4","Age + sex",5007,-2.714582911238
+"All missing PIR assigned >4","Extended (+race/ethnicity)",5007,-1.69673496245044
