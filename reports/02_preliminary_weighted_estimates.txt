@@ -1,0 +1,19 @@
+Loading required package: grid
+Loading required package: Matrix
+Loading required package: survival
+
+Attaching package: ‘survey’
+
+The following object is masked from ‘package:graphics’:
+
+    dotchart
+
+Survey-weighted proportion HbA1c >=6.5%, adults age 20+:
+                        mean     SE
+diabetes_range_hba1c 0.10232 0.0054
+Survey-weighted prevalence by PIR grouping:
+    pir_group diabetes_range_hba1c       ci_l      ci_u
+<=1       <=1           0.10646300 0.08425803 0.1286680
+1-2       1-2           0.11860677 0.09897818 0.1382354
+2-4       2-4           0.10318918 0.07413126 0.1322471
+>4         >4           0.09023011 0.06645928 0.1140009

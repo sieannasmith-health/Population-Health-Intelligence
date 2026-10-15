@@ -1,0 +1,5 @@
+"model","dimension","reference","comparison","difference_pp","lower_pp","upper_pp"
+"Age + sex","income","<=1",">4",-2.70004756844251,-7.09621480013754,1.69611966325251
+"Age + sex","education","<9th","College+",-8.01569766070999,-14.4559445286979,-1.57545079272208
+"Age + sex + race/ethnicity","income","<=1",">4",-1.41860677252861,-5.48189229640894,2.64467875135172
+"Age + sex + race/ethnicity","education","<9th","College+",-5.542433014988,-11.963199892875,0.878333862899001

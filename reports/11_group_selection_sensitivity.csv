@@ -1,0 +1,19 @@
+"dimension","sample","category","n","prevalence","se"
+"income","Group outcome observed","<=1",829,10.65,1.13
+"income","Group outcome observed","1-2",1235,11.86,1
+"income","Group outcome observed","2-4",1179,10.32,1.48
+"income","Group outcome observed",">4",1122,9.02,1.21
+"income","Full model complete","<=1",828,10.65,1.13
+"income","Full model complete","1-2",1234,11.76,0.99
+"income","Full model complete","2-4",1178,10.32,1.48
+"income","Full model complete",">4",1122,9.02,1.21
+"education","Group outcome observed","<9th",430,20.28,2.06
+"education","Group outcome observed","9-11th",572,11.99,1.85
+"education","Group outcome observed","HS/GED",1196,11.12,1.28
+"education","Group outcome observed","Some college",1622,9.23,0.67
+"education","Group outcome observed","College+",1187,8.72,1.15
+"education","Full model complete","<9th",327,21.39,2.66
+"education","Full model complete","9-11th",486,11.83,1.98
+"education","Full model complete","HS/GED",1053,11.65,1.37
+"education","Full model complete","Some college",1445,9.22,0.72
+"education","Full model complete","College+",1051,8.21,1.38

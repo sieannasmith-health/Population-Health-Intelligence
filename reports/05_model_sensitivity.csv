@@ -1,0 +1,9 @@
+"model","term","odds_ratio","lower","upper"
+"Linear age","income>4",0.847,0.526,1.364
+"Linear age","educationCollege+",0.545,0.293,1.012
+"Linear age","RIDAGEYR",1.054,1.045,1.064
+"Linear age","sexFemale",0.723,0.543,0.963
+"Quadratic age","income>4",0.811,0.504,1.303
+"Quadratic age","educationCollege+",0.554,0.3,1.024
+"Quadratic age","RIDAGEYR",1.187,1.12,1.258
+"Quadratic age","sexFemale",0.732,0.552,0.971

@@ -1,0 +1,10 @@
+"dimension","category","estimate","se","lower","upper"
+"income","<=1",11.09,1.15,8.64,13.54
+"income","1-2",10.92,0.97,8.87,12.98
+"income","2-4",9.83,1.4,6.85,12.81
+"income",">4",9.67,1.12,7.29,12.06
+"education","<9th",14.15,2.84,8.09,20.2
+"education","9-11th",9.88,1.76,6.12,13.64
+"education","HS/GED",11.51,1.47,8.38,14.64
+"education","Some college",9.92,0.8,8.22,11.63
+"education","College+",8.6,1.17,6.11,11.1

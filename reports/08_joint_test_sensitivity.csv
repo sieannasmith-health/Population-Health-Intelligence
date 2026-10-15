@@ -1,0 +1,5 @@
+"model","term","residual_df","design_df","p_residual_df","p_design_df"
+"Reduced","income",6,15,0.609919125639425,0.593615766384621
+"Reduced","education",6,15,0.133098324056569,0.0706122012429695
+"Full","income",1,15,0.85384433800558,0.851120719925911
+"Full","education",1,15,0.595695358088787,0.370310858549845

@@ -1,0 +1,13 @@
+data/raw/
+data/processed/
+.Rhistory
+.Rproj.user/
+__pycache__/
+.venv/
+
+.DS_Store
+*.Rproj.user
+reports/17_*_run.log
+# Local coursework practice, not part of this research portfolio
+P551_Week1_Probability_Practice.R
+Population_Health_Week1_Practice.R

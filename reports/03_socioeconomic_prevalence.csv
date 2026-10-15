@@ -1,0 +1,10 @@
+"group_type","category","prevalence_pct","se_pp","lower_pct","upper_pct"
+"Income-to-poverty ratio","<=1",10.65,1.13,8.43,12.87
+"Income-to-poverty ratio","1-2",11.86,1,9.9,13.82
+"Income-to-poverty ratio","2-4",10.32,1.48,7.41,13.22
+"Income-to-poverty ratio",">4",9.02,1.21,6.65,11.4
+"Education","<9th grade",20.28,2.06,16.25,24.31
+"Education","9-11th grade",11.99,1.85,8.36,15.63
+"Education","HS/GED",11.12,1.28,8.6,13.63
+"Education","Some college/AA",9.23,0.67,7.91,10.55
+"Education","College+",8.72,1.15,6.47,10.97

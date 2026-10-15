@@ -1,0 +1,3 @@
+"model","design_df","coefficients","residual_df"
+"Age + sex + SES",15,10,6
+"Age + sex + race + SES",15,15,1

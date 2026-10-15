@@ -1,0 +1,7 @@
+"check","result"
+"Unique IDs","Pass"
+"Adult age","Pass"
+"Expected category codes","Pass"
+"Valid measured HbA1c","Pass"
+"Positive MEC weights","Reviewed"
+"Retained original all-age design","Not in processed adult CSV"
