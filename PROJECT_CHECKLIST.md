@@ -55,10 +55,11 @@
 - [x] Create first local Git commit for reviewed research files
 - [x] Create private GitHub repository and push version-controlled research
 - [ ] Approve and release public GitHub portfolio repository
+- [x] Prepare source-grounded employer-facing resume, LinkedIn and interview copy
 - [ ] Add verified portfolio project to resume, LinkedIn and Recall knowledge base
 
 ## Current decision
-**Next task:** Complete final scientific/editorial review and decide whether to publish the exploratory portfolio publicly. Private GitHub repository is created and synchronized. Internal review is documented in reports/20_publication_review.md. Results are exploratory until the validation and reporting gates are complete.
+**Next task:** Complete final scientific/editorial review and decide public-release scope. Employer-facing project copy is prepared in reports/23_employer_portfolio_copy.md but has not been posted to resume, LinkedIn or Recall. Internal review is documented in reports/20_publication_review.md. Results are exploratory until the validation and reporting gates are complete.
 
 ## Tracking rules
 - [x] = Output exists and was executed or checked.
