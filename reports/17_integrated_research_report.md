@@ -2,7 +2,7 @@
 
 **Population Health Intelligence | Exploratory epidemiologic analysis**  
 **Data:** NHANES 2017-2018  
-**Report status:** Working research draft, not yet approved for public release. Age/sex and race/ethnicity-extended adjustment models are presented as parallel descriptive sensitivity specifications; neither is a causal model.
+**Report status:** Exploratory portfolio case study. Internally reviewed, not independently peer-reviewed or cleared for academic publication. Age/sex and race/ethnicity-extended adjustment models are presented as parallel descriptive sensitivity specifications; neither is a causal model.
 
 ## Executive summary
 This analysis examines whether family income-to-poverty ratio and educational attainment are associated with diabetes-range HbA1c (at least 6.5%) among adults aged 20 years and older. Using 2017-2018 National Health and Nutrition Examination Survey (NHANES) public-use demographic and glycohemoglobin data, we estimated survey-weighted prevalence by socioeconomic category, fitted adjusted logistic regressions, and standardized model predictions to a common analytic population. Higher educational attainment corresponded to lower unadjusted HbA1c prevalence, but the magnitude and statistical uncertainty of the association varied after demographic adjustment. Income patterns were comparatively modest. As a cross-sectional observational analysis, the findings do not identify causal effects.
@@ -110,6 +110,6 @@ Rscript scripts/19_income_missingness_sensitivity.R
 python3 scripts/18_report_consistency_audit.py
 ```
 
-**Before publishing:** retain transparent parallel model specifications; confirm presentation and joint-testing conventions; assess residual missingness risks; review figure accessibility and source captions; run a clean-environment reproducibility audit; then prepare a public-safe repository and portfolio summary.
+**Release scope:** This is an exploratory portfolio report with transparent parallel adjustment specifications. Figure presentation and isolated rebuild were checked locally; unresolved income nonresponse, inferential fragility and lack of independent review remain limitations. See `24_final_portfolio_release_decision.md`.
 
 **Primary source:** National Center for Health Statistics, Centers for Disease Control and Prevention, NHANES 2017-2018 demographic and glycohemoglobin public-use files.

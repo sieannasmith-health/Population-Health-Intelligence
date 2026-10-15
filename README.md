@@ -36,7 +36,7 @@ Rscript -e 'if (!requireNamespace("survey", quietly=TRUE)) install.packages("sur
 ./scripts/17_reproducibility_audit.sh
 ```
 
-The audit rebuilds the full-age survey source from retained XPT files, reruns model checks and recreates comparison outputs. The reproducibility check passed in the original development environment; it has **not** yet been tested on a separate computer.
+The audit rebuilds the full-age survey source from retained XPT files, reruns model checks and recreates comparison outputs. An isolated-folder reproducibility check passed on the original Mac with a fresh Python virtual environment; an independent second-computer test has not been performed.
 
 ## Key project files
 | Location | Content |
