@@ -6,6 +6,15 @@ This portfolio project uses public CDC NHANES 2017-2018 demographic and glycohem
 
 **Research status:** Public exploratory portfolio release completed. Internal scientific/editorial review, income-missingness sensitivity scenarios, and an isolated rebuild on the original Mac are documented. Independent peer review, an independent second-computer replication, and advanced nonresponse-adjustment methods have not been completed. Two adjustment specifications are shown in parallel; associations are observational, not causal.
 
+## Portfolio highlights for employers
+
+- **Data engineering and quality assurance:** merged official NHANES demographic and laboratory files by respondent identifier; audited cohort size, coding, and missingness using Python.
+- **Statistical analysis in R:** implemented design-aware estimation with NHANES examination weights, strata and PSUs; fitted survey-weighted logistic models and standardized marginal prevalence contrasts.
+- **Analytical validation:** compared adjustment specifications, evaluated missing-income scenarios, and checked model replication and reported results.
+- **Communication:** presented an [adjusted comparison figure](reports/16_model_comparison.png) and an [internally reviewed exploratory research report](reports/17_integrated_research_report.md) with interpretable uncertainty and limitations.
+
+**Project scope:** Individual-level public-use NHANES data, analyzed as an observational cross-sectional survey. Results are not causal estimates, verified diagnoses, or clinical eligibility determinations.
+
 ## Research question
 How are income and education associated with diabetes-range HbA1c prevalence among U.S. adults aged 20 years or older?
 
@@ -47,7 +56,7 @@ The audit rebuilds the full-age survey source from retained XPT files, reruns mo
 | `scripts/15_reliability_and_model_decision.R` | Subgroup reliability and model inference comparison |
 | `scripts/16_model_comparison_figures.R` | Generate adjusted figures and tables |
 | `scripts/17_reproducibility_audit.sh` | Local reproducibility entrypoint |
-| `reports/17_integrated_research_report.md` | Integrated research report (working draft) |
+| `reports/17_integrated_research_report.md` | Internally reviewed exploratory portfolio research report |
 | `PROJECT_CHECKLIST.md` | Live project progress and outstanding publication gates |
 
 ## Responsible interpretation
