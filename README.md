@@ -4,7 +4,7 @@
 
 This portfolio project uses public CDC NHANES 2017-2018 demographic and glycohemoglobin data to examine whether income-to-poverty ratio and educational attainment are associated with measured HbA1c >=6.5%. It includes reproducible data preparation, complex-survey weighted estimation, regression modeling, marginal standardization, sensitivity analysis and a research report.
 
-**Research status:** Analyses and an integrated working report exist; external scientific/editorial review and nonresponse sensitivity remain pending; two adjustment specifications are shown in parallel. Reported associations are observational, not causal.
+**Research status:** Public exploratory portfolio release completed. Internal scientific/editorial review, income-missingness sensitivity scenarios, and an isolated rebuild on the original Mac are documented. Independent peer review, an independent second-computer replication, and advanced nonresponse-adjustment methods have not been completed. Two adjustment specifications are shown in parallel; associations are observational, not causal.
 
 ## Research question
 How are income and education associated with diabetes-range HbA1c prevalence among U.S. adults aged 20 years or older?
