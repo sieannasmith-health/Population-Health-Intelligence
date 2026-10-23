@@ -1,4 +1,4 @@
-# Population Health & Disparities Analysis
+# Population Health Analysis
 
 **An exploratory epidemiologic analysis of socioeconomic characteristics and diabetes-range HbA1c among U.S. adults.**
 
