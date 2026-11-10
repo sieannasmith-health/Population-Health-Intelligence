@@ -1,71 +1,68 @@
-# Population Health Analysis
+# Population Health Intelligence
 
-**An exploratory epidemiologic analysis of socioeconomic characteristics and diabetes-range HbA1c among U.S. adults.**
+**NHANES 2021–2023 analysis of socioeconomic characteristics and diabetes-range HbA1c among U.S. adults**
 
-This portfolio project uses public CDC NHANES 2017-2018 demographic and glycohemoglobin data to examine whether income-to-poverty ratio and educational attainment are associated with measured HbA1c >=6.5%. It includes reproducible data preparation, complex-survey weighted estimation, regression modeling, marginal standardization, sensitivity analysis and a research report.
+This portfolio project uses public CDC/NCHS NHANES August 2021–August 2023 demographic and glycohemoglobin data to examine whether income-to-poverty ratio and educational attainment are associated with measured HbA1c >=6.5%.
 
-**Research status:** Public exploratory portfolio release completed. Internal scientific/editorial review, income-missingness sensitivity scenarios, and an isolated rebuild on the original Mac are documented. Independent peer review, an independent second-computer replication, and advanced nonresponse-adjustment methods have not been completed. Two adjustment specifications are shown in parallel; associations are observational, not causal.
+## Current release
 
-## Portfolio highlights for employers
-
-- **Data engineering and quality assurance:** merged official NHANES demographic and laboratory files by respondent identifier; audited cohort size, coding, and missingness using Python.
-- **Statistical analysis in R:** implemented design-aware estimation with NHANES examination weights, strata and PSUs; fitted survey-weighted logistic models and standardized marginal prevalence contrasts.
-- **Analytical validation:** compared adjustment specifications, evaluated missing-income scenarios, and checked model replication and reported results.
-- **Communication:** presented an [adjusted comparison figure](reports/16_model_comparison.png) and an [internally reviewed exploratory research report](reports/17_integrated_research_report.md) with interpretable uncertainty and limitations.
-
-**Project scope:** Individual-level public-use NHANES data, analyzed as an observational cross-sectional survey. Results are not causal estimates, verified diagnoses, or clinical eligibility determinations.
-
-## Research question
-How are income and education associated with diabetes-range HbA1c prevalence among U.S. adults aged 20 years or older?
+- **Cycle:** NHANES 2021–2023
+- **Source files:** DEMO_L and GHB_L
+- **Population:** U.S. adults age 20+
+- **Weighting:** NHANES phlebotomy weight `WTPH2YR` with `SDMVSTRA` and `SDMVPSU`
+- **Methods:** survey-weighted prevalence, survey-weighted logistic regression, standardized prevalence contrasts, missingness and cohort audit
+- **Software:** R (`survey` package)
 
 ## Study at a glance
-- NHANES 2017-2018, two-year survey cycle.
-- 9,254 survey respondents in the all-age merged source, 5,569 adults 20+ and 4,362 complete cases in the adjusted regression analysis.
-- Outcome: HbA1c >=6.5%, a laboratory threshold rather than confirmed clinical diabetes.
-- Main explanatory variables: income-to-poverty ratio and education.
-- Methods: R `survey` package, complex-survey weights/strata/PSUs, adjusted logistic regression and design-covariance-aware standardized prevalence.
 
-## Selected findings (exploratory)
-- Weighted HbA1c >=6.5% prevalence varied from 20.28% among adults with less than ninth-grade education to 8.72% among college graduates and above, before adjustment.
-- The selected college+ versus less-than-ninth-grade standardized contrast was -8.02 percentage points (95% CI -14.46 to -1.58) after age/sex adjustment and -5.54 points (95% CI -11.96 to 0.88) when additionally adjusted for race/ethnicity.
-- Exploratory extreme-category assignments for missing income produced a highest-versus-lowest income contrast of -2.03 to -2.71 percentage points with age/sex adjustment and -0.85 to -1.70 points with extended demographic adjustment. These are assumption stress tests, not definitive bias correction.
+- 11,933 respondents in the demographic source
+- 7,809 adults age 20+
+- 5,767 adults with HbA1c data
+- 5,028 complete cases in the adjusted analysis
+- Survey design degrees of freedom: 15
+- Weighted HbA1c >=6.5% prevalence: **10.48% (95% CI 9.07%–11.89%)**
 
-![Model comparison with design-based uncertainty](reports/16_model_comparison.png)
+## Selected findings
 
-*Figure: survey-standardized prevalence of HbA1c >=6.5% by income and education under two adjustment strategies. Error bars represent approximate design-based 95% confidence intervals. Complete-case analytic sample, n=4,362.*
+### Education
 
-## Reproduce locally
-Prerequisites: Python 3 with `pandas`, R with the `survey` package, and internet access for the initial public NHANES data download (or the original XPT files placed in `data/raw/`).
+Unadjusted HbA1c >=6.5% prevalence ranged from **22.12%** among adults with less than ninth-grade education to **5.20%** among college graduates and above.
 
-```sh
-python3 -m venv .venv
-.venv/bin/python -m pip install pandas
-Rscript -e 'if (!requireNamespace("survey", quietly=TRUE)) install.packages("survey", repos="https://cloud.r-project.org")'
-.venv/bin/python scripts/01_download_and_audit.py
-./scripts/17_reproducibility_audit.sh
-```
+After adjustment for age, sex, and race/ethnicity, the standardized prevalence contrast for College+ versus less than ninth grade was **-8.51 percentage points (95% CI -13.72 to -3.29)**.
 
-The audit rebuilds the full-age survey source from retained XPT files, reruns model checks and recreates comparison outputs. An isolated-folder reproducibility check passed on the original Mac with a fresh Python virtual environment; an independent second-computer test has not been performed.
+### Income
 
-## Key project files
+Unadjusted HbA1c >=6.5% prevalence was **12.40%** among adults with income-to-poverty ratio <=1 and **7.35%** among adults with ratio >4.
+
+After adjustment for age, sex, and race/ethnicity, the standardized >4 versus <=1 contrast was **-1.63 percentage points (95% CI -4.92 to 1.66)**, indicating a weaker and less precise adjusted income gradient than the education gradient.
+
+## Interpretation
+
+This is a cross-sectional observational analysis. Results describe associations and should not be interpreted as causal effects or individual clinical diagnoses. HbA1c >=6.5% is treated as a laboratory threshold rather than verified diabetes status.
+
+## Current project files
+
 | Location | Content |
 |---|---|
-| `scripts/01_download_and_audit.py` | Official XPT acquisition, adult merge and audit |
-| `scripts/13_build_full_survey.py` | Reconstruct all-age NHANES analytic source |
-| `scripts/14_model_replication.R` | Verify adjusted model and marginal replication |
-| `scripts/15_reliability_and_model_decision.R` | Subgroup reliability and model inference comparison |
-| `scripts/16_model_comparison_figures.R` | Generate adjusted figures and tables |
-| `scripts/17_reproducibility_audit.sh` | Local reproducibility entrypoint |
-| `reports/17_integrated_research_report.md` | Internally reviewed exploratory portfolio research report |
-| `PROJECT_CHECKLIST.md` | Live project progress and outstanding publication gates |
-
-## Responsible interpretation
-This is a cross-sectional analysis. Covariate selection influences adjusted findings; the extended model has limited residual survey degrees of freedom for some omnibus tests. Complete-case exclusions, especially missing income data, may cause selection bias. No result should be read as a causal effect or individual medical diagnosis.
+| `scripts/2021_2023_refresh.R` | Current end-to-end NHANES 2021–2023 analysis |
+| `reports/2021_2023_data_audit.csv` | Cohort counts and missingness audit |
+| `reports/2021_2023_summary.csv` | Primary weighted prevalence and design summary |
+| `reports/2021_2023_unadjusted_prevalence.csv` | Weighted prevalence by income and education |
+| `reports/2021_2023_adjusted_odds_ratios.csv` | Survey-weighted logistic model results |
+| `reports/2021_2023_adjusted_prevalence.csv` | Standardized prevalence estimates |
+| `reports/2021_2023_adjusted_contrasts.csv` | Standardized income and education contrasts |
 
 ## Data and provenance
-Source: US National Center for Health Statistics, CDC, NHANES 2017-2018.
-- [Demographic file (DEMO_J)](https://wwwn.cdc.gov/nchs/data/nhanes/public/2017/datafiles/DEMO_J.htm)
-- [Glycohemoglobin file (GHB_J)](https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GHB_J.htm)
-- [NHANES analytic guidance](https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx)
 
-The project's `.gitignore` excludes raw/processed respondent-level source files and virtual environments from Git. The included figure and aggregate tables contain no respondent-level identifiers.
+Source: U.S. National Center for Health Statistics, CDC, NHANES August 2021–August 2023.
+
+- Demographics: `DEMO_L`
+- Glycohemoglobin: `GHB_L`
+- HbA1c: `LBXGH`
+- Phlebotomy weight: `WTPH2YR`
+
+Raw respondent-level XPT files remain excluded from GitHub through `.gitignore`.
+
+## Legacy materials
+
+The repository retains earlier 2017–2018 scripts and reports as historical project-development artifacts. The **2021–2023 files listed above are the current analysis and should be used for portfolio review and résumé claims**.
