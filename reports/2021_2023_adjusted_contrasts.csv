@@ -1,0 +1,9 @@
+[Reading 5 lines from start (total: 5 lines, 0 remaining)]
+
+"model","dimension","reference","comparison","difference_pp","lower_pp","upper_pp"
+"Age + sex","income","<=1",">4",-2.72880289082325,-6.02589055244776,0.568284770801272
+"Age + sex","education","<9th","College+",-10.6980933602495,-15.6912711577588,-5.70491556274032
+"Age + sex + race/ethnicity","income","<=1",">4",-1.63048541135487,-4.92393195356317,1.66296113085342
+"Age + sex + race/ethnicity","education","<9th","College+",-8.50871527128985,-13.7239669403963,-3.29346360218336
+
+[executed on device: Sieannas-MacBook-Pro.local (5aa3f463-85a9-42eb-849f-e2a15e4fbbec)]
