@@ -1,0 +1,14 @@
+[Reading 10 lines from start (total: 10 lines, 0 remaining)]
+
+"metric","n"
+"demographics_total",11933
+"ghb_records",7199
+"adults_age20plus",7809
+"adults_with_hba1c",5767
+"adult_complete_cases",5028
+"adult_missing_hba1c",2042
+"adult_missing_income",1320
+"adult_missing_education",26
+"adult_nonpositive_or_missing_phlebotomy_weight",2017
+
+[executed on device: Sieannas-MacBook-Pro.local (5aa3f463-85a9-42eb-849f-e2a15e4fbbec)]
