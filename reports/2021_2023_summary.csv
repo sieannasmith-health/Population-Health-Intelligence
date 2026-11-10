@@ -1,0 +1,8 @@
+[Reading 4 lines from start (total: 4 lines, 0 remaining)]
+
+"metric","value","lower_95","upper_95"
+"analytic_n",5028,NA,NA
+"survey_design_df",15,NA,NA
+"weighted_hba1c_ge6_5_pct",10.4841355824004,9.07441545437043,11.8938557104304
+
+[executed on device: Sieannas-MacBook-Pro.local (5aa3f463-85a9-42eb-849f-e2a15e4fbbec)]
