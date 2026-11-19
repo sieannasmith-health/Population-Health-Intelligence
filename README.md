@@ -60,7 +60,7 @@ A separate exploratory extension uses standardized HbA1c, BMI, and systolic bloo
 - [Four-cluster scientific interpretation and validation notes](reports/kmeans_k4_interpretation.md)
 - [K = 4 reproducibility and validation script](scripts/29_nhanes_kmeans_k4_validation.R)
 - The older `reports/kmeans/` files are from a **K = 2** run and must not be mistaken for K = 4 outputs. The K = 4 script writes its outputs to `reports/kmeans_k4/` when run locally with NHANES XPT files.
-- **Verification status:** The figures reported in the interpretation were recorded in the RStudio session; the newly added reproduction script has not been rerun during this GitHub update.
+- **Reproducibility run completed (Nov 19, 2026):** R 4.6.1 executed the K = 4 script against local source XPTs, reproducing 5,536 adult observations, four cluster centroids and sizes, and ARI = 1.000 across all 28 pairwise seed comparisons. The new consistent-subsample mean silhouette estimates were 0.334749 (K = 2) and 0.342952 (K = 4). Verified outputs are linked in the scientific interpretation.
 
 ## Data and provenance
 
