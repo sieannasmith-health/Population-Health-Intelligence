@@ -52,6 +52,16 @@ This is a cross-sectional observational analysis. Results describe associations 
 | `reports/2021_2023_adjusted_prevalence.csv` | Standardized prevalence estimates |
 | `reports/2021_2023_adjusted_contrasts.csv` | Standardized income and education contrasts |
 
+
+## Additional analysis: Cardiometabolic K-means (K = 4)
+
+A separate exploratory extension uses standardized HbA1c, BMI, and systolic blood pressure from **5,536 NHANES adults** to compare two versus four cardiometabolic clusters. Four clusters reveal profiles with comparatively lower measurements, higher BMI, markedly elevated HbA1c, and higher systolic blood pressure. The recorded RStudio comparison found similar mean silhouette scores for K = 2 and K = 4 (0.3338 and 0.3359 on a common 1,500-person subsample), and stable four-group assignments across eight random initializations. The analysis is descriptive, not causal.
+
+- [Four-cluster scientific interpretation and validation notes](reports/kmeans_k4_interpretation.md)
+- [K = 4 reproducibility and validation script](scripts/29_nhanes_kmeans_k4_validation.R)
+- The older `reports/kmeans/` files are from a **K = 2** run and must not be mistaken for K = 4 outputs. The K = 4 script writes its outputs to `reports/kmeans_k4/` when run locally with NHANES XPT files.
+- **Verification status:** The figures reported in the interpretation were recorded in the RStudio session; the newly added reproduction script has not been rerun during this GitHub update.
+
 ## Data and provenance
 
 Source: U.S. National Center for Health Statistics, CDC, NHANES August 2021–August 2023.
